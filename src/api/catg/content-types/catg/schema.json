@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "catgs",
+  "info": {
+    "singularName": "catg",
+    "pluralName": "catgs",
+    "displayName": "Catg"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cname": {
+      "type": "string"
+    }
+  }
+}
