@@ -794,12 +794,14 @@ export interface ApiCatgCatg extends Schema.CollectionType {
     singularName: 'catg';
     pluralName: 'catgs';
     displayName: 'Catg';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     cname: Attribute.String;
+    icon: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -861,6 +863,7 @@ export interface ApiStoreStore extends Schema.CollectionType {
       'oneToMany',
       'api::catg.catg'
     >;
+    Description: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
